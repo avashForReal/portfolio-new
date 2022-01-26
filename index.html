@@ -5,67 +5,186 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>uwu</title>
+    <title>[avash]</title>
 
     <!-- IMPORT CSS -->
     <link rel="stylesheet" href="./css/index.css">
 
     <!-- font import -->
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600&family=Quicksand:wght@400;600&display=swap');
     </style>
 
 </head>
 
 <body>
 
-    <div id="particles-js">
+    <div id="container">
+
+        <!-- particles js -->
+        <!-- <div id="particles-js"></div> -->
 
 
         <!-- nav -->
         <div id="nav-container">
             <div id="nav-bar">
                 <div id="logo">
-                    &lt;AVASH &nbsp;/&gt;
+                    <img src="/media/logo.png" alt="avash-logo">
                 </div>
 
-                <div id="nav-tabs">
-                    <ul>
-                        <li>
-                            <a href="https://github.com/avashForReal" target="blank">
-                                <img src="./media/github.png" alt="github">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <img src="./media/linkedin.png" alt="linkedin">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <img src="./media/telegram.png" alt="telegram">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                <a href="contact.html" class="tab">
+                    contact
+                </a>
             </div>
         </div>
 
-        <!-- page header/intro and contact -->
-        <div>
-            <div>
-                <p>Hi</p>
-                <div></div>
+        <!-- page header/intro -->
+        <div id="page-header">
+            <div id="page-intro">
+                <p id="page-title">
+                    Hi, I am Avash
+                </p>
+                <p id="page-introduction">
+                    I am an aspiring backend engineer and I like a little bit of everything.
+                </p>
             </div>
+            <div id="page-avatar">
+                <img src="/media/avatar.jpg" alt="header-avatar">
+            </div>
+
+        </div>
+
+        <!-- more intro -->
+        <div id="intro-extended">
+            <p id="extended-heading">
+                A little more about me
+            </p>
+            <p id="extended-paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex a nihil assumenda quos vero! Aut error
+                explicabo voluptate sed. Ratione pariatur aliquam alias praesentium, quos nemo neque molestiae quia,
+                ducimus minus rerum vel repudiandae saepe. Dolore, fuga illum! Molestias nam officia error voluptas
+                asperiores ex odio nisi sequi eaque animi.
+            </p>
+
+            <!-- <div id="social-links">
+                hello
+            </div> -->
         </div>
 
         <!-- projects -->
+        <div id="projects">
+            <p id="projects-heading">
+                Projects that I've done
+            </p>
+            <p id="projects-paragraph">
+                It ain't much but it's honest work
+            </p>
 
+            <div id="projects-list">
+                <div class="project-card">
+                    <div class="project-img-container">
+                        <img src="/media/projects/fvt.png" alt="fvt-logo" id="project-one">
+                    </div>
+                    <p>Future Verification Technology Inc</p>
+                    <a href="https://www.futureverification.com/" target="_blank" class="card-button">
+                        visit site
+                    </a>
+                </div>
+                <div class="project-card">
+                    <div class="project-img-container">
+                        <img src="/media/projects/otermans.png" alt="otermans" id="project-three">
+                    </div>
+                    <p>Otermans Institute-Search</p>
+                    <a href="https://beta-search.oiedu.co.uk/" target="_blank" class="card-button">
+                        visit site
+                    </a>
+                </div>
+                <div class="project-card">
+                    <div class="project-img-container">
+                        <img src="/media/projects/shangrila.png" alt="shangrila" id="project-two">
+                    </div>
+                    <p>Shangrila Dialogue</p>
+                    <a href="https://shangrilaaa.netlify.app/" target="_blank" class="card-button">
+                        visit site
+                    </a>
+                </div>
+            </div>
+        </div>
 
+        <!-- tools and tech -->
+        <div id="tools">
+            <p id="tools-heading">
+                Tech I use
+            </p>
+            <div id="tools-paragraph">
+                <div>
+                    <img src="/media/tools/linux.png" alt="linux">
+                    <p>Linux</p>
+                </div>
+                <div>
+                    <img src="/media/tools/mongodb.png" alt="mongo">
+                    <p>mongodb</p>
+                </div>
+                <div>
+                    <img src="/media/tools/react.png" alt="react">
+                    <p>react</p>
+                </div>
+                <div>
+                    <img src="/media/tools/node.png" alt="node">
+                    <p>node</p>
+                </div>
+            </div>
+        </div>
 
         <!-- footer -->
+        <div id="footer">
+            <div id="mail-tag">
+                <p id="header-text">
+                    Start a project
+                </p>
+                <p id="header-paragraph">
+                    Interested in working together? We should queue up a chat. I’ll buy the coffee.
+                </p>
+                <a href="contact.html" class="tab">
+                    contact me
+                </a>
+            </div>
 
+            <div id="footer-text">
+                <div>
+                    <p id="footer-heading">connect with me
+                    </p>
+                    <p id="footer-mail">avash700@gmail.com
+                    </p>
+                </div>
+                <p>
+                    <span>
+                       <a href="https://www.linkedin.com/in/avash-ghimire/" target="_blank">
+                           <img src="/media/linkedin.png" alt="linkedin">
+                       </a>
+
+                       <a href="https://t.me/mausinthehaus" target="_blank">
+                           <img src="/media/telegram.png" alt="telegram">
+                       </a>
+                    </span>
+                </p>
+            </div>
+
+            <div id="rights">
+                <p>
+                    learning, unlearning and relearning everyday
+                </p>
+                <p>
+                    &copy;	Avash Ghimire
+                </p>
+                <p>
+                    Design inspiration: <span style="text-decoration: underline; cursor: pointer;"><a style="text-decoration: none;" href="https://mattfarley.ca/" target="_blank">Matt Farley</a></span>
+                </p>
+            </div>
+
+        </div>
     </div>
+
 
 
 
@@ -78,4 +197,5 @@
     </script>
 
 </body>
+
 </html>

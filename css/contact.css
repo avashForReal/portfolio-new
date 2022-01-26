@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+   text-align: center;
+}
+
+#nav-container{
+    width: auto;
+    margin: 0 12rem;
+    padding: 1.1rem 0;
+}
+
+#tab img {
+ height: 1.8rem;
+}
+
+#nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo img{
+    width: 10rem;
+}
+
+#contact-heading {
+    margin: 2.8rem 0;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 2rem;
+    color: #141D3B;
+}
+
+.contact-box{
+    margin: 6rem auto;
+    width: 52rem;
+    display: flex;
+    flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+}
+
+.field{
+	width: 100%;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.4rem;
+	outline: none;
+	padding: 1rem ;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+}
+
+.field:hover{
+	background-color: #7410f717;
+}
+
+textarea{
+	min-height: 150px;
+}
+
+.btn{
+    font-family: 'Quicksand', sans-serif;
+    font-size: large;
+    color: #7510F7;
+    padding: 8px 24px;
+    border: 2px solid #7510F7;
+    border-radius: 2rem;
+    text-decoration: none;
+    transition: all ease-in 0.2s;
+    background: #fff;
+}
+
+.btn:hover{
+    background-color: #7510F7;
+    color: #fff;
+    cursor: pointer;
+}
+
+.field:focus{
+    border: 1px solid #7510F7;
+    background-color: #fff;
+}
+
+#rights{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.8rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: #353636;
+}

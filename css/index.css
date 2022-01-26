@@ -1,45 +1,303 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    color: #3812ad;
+}
+
+#container {
+   text-align: center;
+}
+
+#nav-container{
+    width: auto;
+    margin: 0 12rem;
+    padding: 1.1rem 0;
+}
+
+.tab {
     font-family: 'Quicksand', sans-serif;
+    font-size: large;
+    color: #7510F7;
+    padding: 8px 24px;
+    border: 2px solid #7510F7;
+    border-radius: 2rem;
+    text-decoration: none;
 }
 
-/* body {
-    /* background-image: url("/media/bg-new.svg");
-    background-repeat: no-repeat;
-    background-attachment: fixed; */
-    /* background-color: #222831; */
- 
-
-#nav-container {
-    padding: 1.5rem 4rem;
+.tab:hover {
+    background-color: #7510F7;
+    color: #fff;
+    cursor: pointer;
+    transition: all ease-in 0.2s;
 }
 
-#nav-bar {
+#nav-bar{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#nav-tabs ul {
-    list-style: none;
-    display: flex;
-} 
+#logo img{
+    width: 10rem;
+}
 
-#nav-tabs ul li{
-    list-style: none;
+#page-header {
+    margin-top: 6rem;
+}
+
+#page-title{
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 4rem;
+    color: #141D3B;
+}
+
+#page-introduction{
+    font-family: 'Quicksand', sans-serif;
+    font-size: x-large;
+    color: #222323;
+}
+
+#page-avatar img{
+    width: 12rem;
+    height:12rem;
+    border-radius: 100%;
+    margin: 3rem 0;
+}
+
+#intro-extended {
+    background-color: #7510F7;
+    padding: 5rem 20rem;
+    margin-top: 4rem;
+}
+
+#extended-heading{
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 2em;
+    color: #fff;
+}
+
+#extended-paragraph{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.3rem;
+    color: #fff;
+    margin-top: 1rem;
+}
+
+#projects {
+    margin: 4rem 0;
+}
+
+#projects-heading {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 2rem;
+    color: #141D3B;
+}
+
+#projects-paragraph {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.3rem;
+    color: #222323;
+    margin-top: 1rem;
+}
+
+#projects-list {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.project-card {
+    /* border: 1px solid #22232370; */
+    padding: 2rem;
+    /* background: linear-gradient(128deg, rgba(20,29,59,1) 0%, rgba(117,16,247,1) 100%, rgba(0,212,255,1) 100%); */
+    width: 20rem;
+    height: 16rem;
+    color: #222323;
+    font-family: 'Quicksand', sans-serif;
+    font-size: larger;
+    font-weight: bold;
+    border-radius: 1rem;
     margin: 0 2rem;
-} 
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
 
-#nav-tabs ul li img{
+.project-card p {
+    margin: 1.2rem 0;
+}
+
+.card-button {
+    font-family: 'Quicksand', sans-serif;
+    font-size: large;
+    color: #7510F7;
+    padding: 4px 18px;
+    border: 2px solid #7510F7;
+    border-radius: 2rem;
+    text-decoration: none;
+}
+
+.card-button:hover {
+    background-color: #7510F7;
+    color: #fff;
+    cursor: pointer;
+    transition: all ease-in 0.2s;
+}
+
+.project-img-container {
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#project-one {
+    height: 8rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+#project-two {
+    height: 4rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+#project-three {
+    height: 8rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+#tools {
+    background-color: #7510F7;
+    padding: 5rem 20rem 12rem;
+    margin-top: 4rem;
+}
+
+#tools-heading{
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 2em;
+    color: #fff;
+}
+
+#tools-paragraph{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.3rem;
+    color: #fff;
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#tools-paragraph div {
+    margin: 0 4rem;
+}
+
+#tools-paragraph div img{
+    height: 4rem;
+    transition: all ease-out 0.2s;
+}
+
+#tools-paragraph div img:hover{
+    transform: scale(1.2);
+}
+
+#tools-paragraph div p{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.3rem;
+    color: #fff;
+    margin-top: 1.2rem;
+}
+
+#mail-tag {
+    border-radius: 1rem;
+    width: 78rem;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 4rem;
+    margin: -5rem auto 0;
+    background-color: #141D3B
+}
+
+#header-text {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 2em;
+    color: #fff;
+}
+
+#header-paragraph{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.1rem;
+    color: #fff;
+    width: 38rem;
+}
+
+#footer .tab{
+    color:#fff;
+    font-weight: bold;
+}
+
+#footer-text {
+    color: #141D3B;
+    display: flex;
+    align-items: center;
+    width: 74rem;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 8rem;
+    margin-bottom: 6rem;
+    text-align: left;
+    font-weight: bolder;
+}
+
+#footer-text img{
     width: 2rem;
     height:2rem;
-    /* border-radius: 100%; */
-} 
+}
 
-#nav-tabs ul li, #logo {
-   font-size: 1.5rem;
-   font-weight: bolder;
-} 
+#footer-heading{
+    font-size: 1.4rem;
+    font-family: 'Chakra Petch', sans-serif;
+
+}
+
+#footer-mail{
+    text-decoration: underline;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2rem;
+    margin-top: 1.1rem;
+    transition: all ease-in 0.1s;
+    cursor: pointer;
+
+}
+
+#footer-mail:hover{
+    color: #353636;
+}
+
+#footer-text img{
+    margin: 0 1.1rem;
+    cursor: pointer;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    transition: all ease-in 0.1s;
+}
+
+#footer-text img:hover{
+    transform: scale(1.1);
+}
+
+#rights{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+    color: #353636;
+}
+
