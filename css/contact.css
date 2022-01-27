@@ -9,7 +9,7 @@
 
 #nav-container{
     width: auto;
-    margin: 0 12rem;
+    margin: 0 9rem;
     padding: 1.1rem 0;
 }
 
@@ -36,7 +36,7 @@
 
 .contact-box{
     margin: 6rem auto;
-    width: 52rem;
+    width: 100%;
     display: flex;
     flex-direction: column;
 	justify-content: center;
@@ -93,4 +93,12 @@ textarea{
     margin-top: 2rem;
     margin-bottom: 2rem;
     color: #353636;
+}
+
+/* On screens that are 769px or less*/
+@media screen and (max-width: 769px) {
+    #nav-container{
+        margin: 0 2rem;
+        padding: 1.1rem 0;
+    }
 }

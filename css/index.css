@@ -9,7 +9,7 @@
 
 #nav-container{
     width: auto;
-    margin: 0 12rem;
+    margin: 0 8rem;
     padding: 1.1rem 0;
 }
 
@@ -56,17 +56,45 @@
     color: #222323;
 }
 
-#page-avatar img{
+.eye {
+    position: relative;
+    display: inline-block;
+    top: 65px;
+    left: 8px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background: #fff;
+  }
+  .eye:after { /*pupil*/
+    position: absolute;
+    bottom: 17px;
+    right: 10px;
+    width: 4px;
+    height: 4px;
+    background: #000;
+    border-radius: 50%;
+    content: " ";
+  }
+
+#page-avatar{
     width: 12rem;
     height:12rem;
-    border-radius: 100%;
-    margin: 3rem 0;
+    /* border-radius: 100%; */
+    margin: 3rem auto;
+    background-image: url(/media/avatar.jpg);
+    background-size: cover;
+}
+
+#intro-container {
+    background-color: #7510F7;
 }
 
 #intro-extended {
-    background-color: #7510F7;
-    padding: 5rem 20rem;
-    margin-top: 4rem;
+    width: 80vw;
+    padding: 4rem 0;
+    margin: 5rem auto;
+    /* margin-top: 4rem; */
 }
 
 #extended-heading{
@@ -101,20 +129,22 @@
 
 #projects-list {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     margin-top: 4rem;
+
 }
 
 .project-card {
     /* border: 1px solid #22232370; */
     padding: 2rem;
     /* background: linear-gradient(128deg, rgba(20,29,59,1) 0%, rgba(117,16,247,1) 100%, rgba(0,212,255,1) 100%); */
-    width: 20rem;
+    width: 20%;
     height: 16rem;
     color: #222323;
     font-family: 'Quicksand', sans-serif;
-    font-size: larger;
+    font-size: medium;
     font-weight: bold;
     border-radius: 1rem;
     margin: 0 2rem;
@@ -122,6 +152,9 @@
 }
 
 .project-card p {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
     margin: 1.2rem 0;
 }
 
@@ -133,6 +166,7 @@
     border: 2px solid #7510F7;
     border-radius: 2rem;
     text-decoration: none;
+    
 }
 
 .card-button:hover {
@@ -173,10 +207,17 @@
     margin: auto;
 }
 
+
+
 #tools {
     background-color: #7510F7;
-    padding: 5rem 20rem 12rem;
+    padding: 5rem 0rem 12rem;
     margin-top: 4rem;
+
+    /* width: 80vw;
+    padding: 4rem 0 12rem;
+    margin: 5rem auto; */
+    
 }
 
 #tools-heading{
@@ -191,11 +232,13 @@
     color: #fff;
     margin-top: 4rem;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 #tools-paragraph div {
+    width: 10%;
     margin: 0 4rem;
 }
 
@@ -217,7 +260,7 @@
 
 #mail-tag {
     border-radius: 1rem;
-    width: 78rem;
+    width: 80%;
     height: 10rem;
     display: flex;
     align-items: center;
@@ -249,7 +292,7 @@
     color: #141D3B;
     display: flex;
     align-items: center;
-    width: 74rem;
+    width: 80%;
     margin: auto;
     justify-content: space-between;
     margin-top: 8rem;
@@ -301,3 +344,84 @@
     color: #353636;
 }
 
+/* On screens that are 481px or less*/
+@media screen and (max-width: 481px) {
+    #tools{
+    padding: 5rem 0rem 8rem;
+    }
+}
+
+
+/* On screens that are 769px or less*/
+@media screen and (max-width: 769px) {
+    #nav-container{
+        margin: 0 2rem;
+        padding: 1.1rem 0;
+    }
+
+    #intro-extended {
+        padding: 5rem 0;
+    }
+
+    .project-card {
+        padding: 2rem;
+        width: 40%;
+        height: 16rem;
+        color: #222323;
+        font-family: 'Quicksand', sans-serif;
+        font-size: medium;
+        font-weight: bold;
+        border-radius: 1rem;
+        margin: 1.4rem 2rem;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    }
+
+    #mail-tag {
+        border-radius: 1rem;
+        width: 30rem;
+        height: 10rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 2rem 4rem;
+        margin: -5rem auto 0;
+        background-color: #141D3B
+    }
+
+    #tools{
+        padding: 5rem 0rem 12rem;
+    }
+
+   
+    
+}
+
+/* On screens that are 1020px or less*/
+@media screen and (max-width: 1020px) {
+    
+    .project-card {
+        padding: 2rem;
+        width: 40%;
+        height: 16rem;
+        color: #222323;
+        font-family: 'Quicksand', sans-serif;
+        font-size: medium;
+        font-weight: bold;
+        border-radius: 1rem;
+        margin: 1.4rem 2rem;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    }
+
+    #tools{
+        padding: 5rem 0rem 12rem;
+    }
+
+    #tools-paragraph div {
+        margin: 2rem 4rem;
+    }
+
+    /* #tools-paragraph div {
+        margin: 1.4rem 4rem;
+    } */
+}

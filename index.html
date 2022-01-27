@@ -15,6 +15,9 @@
         @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600&family=Quicksand:wght@400;600&display=swap');
     </style>
 
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -49,26 +52,30 @@
                 </p>
             </div>
             <div id="page-avatar">
-                <img src="/media/avatar.jpg" alt="header-avatar">
+                <div class='eye'></div>
+                <div class='eye'></div>
+                <!-- <img src="/media/avatar.jpg" alt="header-avatar"> -->
             </div>
 
         </div>
 
         <!-- more intro -->
-        <div id="intro-extended">
-            <p id="extended-heading">
-                A little more about me
-            </p>
-            <p id="extended-paragraph">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex a nihil assumenda quos vero! Aut error
-                explicabo voluptate sed. Ratione pariatur aliquam alias praesentium, quos nemo neque molestiae quia,
-                ducimus minus rerum vel repudiandae saepe. Dolore, fuga illum! Molestias nam officia error voluptas
-                asperiores ex odio nisi sequi eaque animi.
-            </p>
+        <div id="intro-container">
+            <div id="intro-extended">
+                <p id="extended-heading">
+                    A little more about me
+                </p>
+                <p id="extended-paragraph">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex a nihil assumenda quos vero! Aut error
+                    explicabo voluptate sed. Ratione pariatur aliquam alias praesentium, quos nemo neque molestiae quia,
+                    ducimus minus rerum vel repudiandae saepe. Dolore, fuga illum! Molestias nam officia error voluptas
+                    asperiores ex odio nisi sequi eaque animi.
+                </p>
 
-            <!-- <div id="social-links">
-                hello
-            </div> -->
+                <!-- <div id="social-links">
+                    hello
+                </div> -->
+            </div>
         </div>
 
         <!-- projects -->
@@ -159,13 +166,13 @@
                 </div>
                 <p>
                     <span>
-                       <a href="https://www.linkedin.com/in/avash-ghimire/" target="_blank">
-                           <img src="/media/linkedin.png" alt="linkedin">
-                       </a>
+                        <a href="https://www.linkedin.com/in/avash-ghimire/" target="_blank">
+                            <img src="/media/linkedin.png" alt="linkedin">
+                        </a>
 
-                       <a href="https://t.me/mausinthehaus" target="_blank">
-                           <img src="/media/telegram.png" alt="telegram">
-                       </a>
+                        <a href="https://t.me/mausinthehaus" target="_blank">
+                            <img src="/media/telegram.png" alt="telegram">
+                        </a>
                     </span>
                 </p>
             </div>
@@ -175,16 +182,34 @@
                     learning, unlearning and relearning everyday
                 </p>
                 <p>
-                    &copy;	Avash Ghimire
+                    &copy; Avash Ghimire
                 </p>
                 <p>
-                    Design inspiration: <span style="text-decoration: underline; cursor: pointer;"><a style="text-decoration: none;" href="https://mattfarley.ca/" target="_blank">Matt Farley</a></span>
+                    Design inspiration: <span style="text-decoration: underline; cursor: pointer;"><a
+                            style="text-decoration: none;" href="https://mattfarley.ca/" target="_blank">Matt
+                            Farley</a></span>
                 </p>
             </div>
 
         </div>
     </div>
 
+    <script>
+        $("#container").mousemove(function (event) {
+            var eye = $(".eye");
+            var x = eye.offset().left + eye.width() / 2;
+            var y = eye.offset().top + eye.height() / 2;
+            var rad = Math.atan2(event.pageX - x, event.pageY - y);
+            var rot = rad * (180 / Math.PI) * -1 + 180;
+            eye.css({
+                "-webkit-transform": "rotate(" + rot + "deg)",
+                "-moz-transform": "rotate(" + rot + "deg)",
+                "-ms-transform": "rotate(" + rot + "deg)",
+                transform: "rotate(" + rot + "deg)"
+            });
+        });
+
+    </script>
 
 </body>
 
