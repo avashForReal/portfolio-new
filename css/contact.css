@@ -95,7 +95,7 @@ textarea{
     color: #353636;
 }
 
-.error{
+#name-error, #email-error, #message-error{
     font-family: 'Quicksand', sans-serif;
     font-size: 0.8rem;
     color: rgb(196, 11, 11);
