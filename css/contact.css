@@ -95,6 +95,14 @@ textarea{
     color: #353636;
 }
 
+.error{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.8rem;
+    color: rgb(196, 11, 11);
+    /* display: none; */
+    visibility: hidden;
+}
+
 /* On screens that are 769px or less*/
 @media screen and (max-width: 769px) {
     #nav-container{

@@ -42,9 +42,12 @@
         <!-- form -->
         <div class="contact-box">
             <form id="contact-form">
-                <input type="text" class="field" placeholder="Name" required>
-                <input type="email" class="field" placeholder="Email" required>
-                <textarea placeholder="Message" class="field" required></textarea>
+                <p id="name-error">*Name is required.</p>
+                <input type="text" class="field" placeholder="Name" >
+                <p class="error">*Email is required and must be a valid one.</p>
+                <input type="email" class="field" placeholder="Email" >
+                <p class="error">*Message is required.</p>
+                <textarea placeholder="Message" class="field" ></textarea>
                 <input id="submit-btn" type="submit" value="Send" class="btn">
             </form>
         </div>
